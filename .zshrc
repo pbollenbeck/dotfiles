@@ -19,6 +19,7 @@ GIT_PS1_SHOWUPSTREAM="auto"
 # completion
 autoload -U compinit
 compinit
+cdpath=(~ ~/projects)
 
 # history
 HISTFILE=$HOME/.history
