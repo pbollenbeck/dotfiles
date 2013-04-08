@@ -10,7 +10,6 @@ autoload -U promptinit
 promptinit
 
 source /usr/local/etc/bash_completion.d/git-prompt.sh
-# PROMPT='%{$fg_bold[magenta]%}%c%{$reset_color%}$(__git_ps1) %# '
 PROMPT='%{$fg_bold[cyan]%}%c%{$reset_color%}%{$fg_bold[white]%}$(__git_ps1)%{$reset_color%} %# '
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
