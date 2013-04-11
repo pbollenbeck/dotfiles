@@ -19,6 +19,10 @@ GIT_PS1_SHOWUPSTREAM="auto"
 # completion
 autoload -U compinit
 compinit
+zstyle ':completion:*' completer _complete _ignored
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]} l:|=* r:|=*'
+
+# path
 cdpath=(~ ~/projects)
 
 # history
