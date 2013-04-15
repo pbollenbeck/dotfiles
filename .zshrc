@@ -39,7 +39,8 @@ export EDITOR=vi
 # alias
 alias gst='git status'
 alias g=gst
-alias gco='git commit'
+alias gc='git commit'
+alias gco='git checkout'
 alias gl='git pull'
 alias gp='git push'
 alias gd='git diff'
