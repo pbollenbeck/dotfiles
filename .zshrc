@@ -52,3 +52,6 @@ alias rgc='rails g controller'
 
 alias ll='ls -al'
 
+# switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
+stty -ixon -ixoff
+
