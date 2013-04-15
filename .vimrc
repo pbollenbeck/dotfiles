@@ -9,6 +9,7 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 set autoindent
+set complete=.,w,b,t
 set cursorline
 set encoding=utf-8
 set expandtab
@@ -50,4 +51,16 @@ map <C-l> <C-w>l
 nmap <CR> :nohlsearch<CR>
 
 let mapleader=","
+
+" use tab for completion unless at beginning of line
+" see: https://github.com/thoughtbot/dotfiles/blob/master/vimrc
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 
