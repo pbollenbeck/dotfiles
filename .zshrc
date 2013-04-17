@@ -45,6 +45,7 @@ alias gl='git pull'
 alias gp='git push'
 alias gd='git diff'
 alias gdc='git diff --cached'
+alias ga='git add'
 alias gaa='git add --all'
 
 alias rgm='rails g model'
