@@ -55,6 +55,8 @@ alias rgc='rails g controller'
 
 alias ll='ls -al'
 
+alias lc='for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done'
+
 # switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
 stty -ixon -ixoff
 
