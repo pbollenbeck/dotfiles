@@ -8,6 +8,9 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
+highlight NonText ctermfg=236
+highlight SpecialKey ctermfg=236
+
 set autoindent
 set complete=.,w,b,t
 set cursorline
@@ -18,6 +21,8 @@ set hlsearch
 set ignorecase
 set incsearch
 set laststatus=2
+set list
+set listchars=tab:▸\ ,eol:¬
 set number
 set shiftwidth=4
 set showcmd
