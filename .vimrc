@@ -72,8 +72,8 @@ inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>r :call RunTestFile()<cr>
 " map <leader>T :call RunNearestTest()<cr>
-map <leader>R :call RunTests('')<cr>
-map <leader>c :w\|:!cucumber<cr>
+map <leader>R :!rake<cr>
+map <leader>c :w\|:!script/cucumber<cr>
 " map <leader>w :w\|:!script/features --profile wip<cr>
 
 function! RunTestFile(...)
