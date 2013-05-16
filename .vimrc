@@ -14,6 +14,7 @@ highlight SpecialKey ctermfg=236
 set autoindent
 set complete=.,w,b,t
 set cursorline
+set dir=~/tmp,/var/tmp,.
 set encoding=utf-8
 set expandtab
 set hidden
