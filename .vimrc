@@ -79,8 +79,8 @@ inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 map <leader>r :call RunTestFile()<cr>
 " map <leader>T :call RunNearestTest()<cr>
 map <leader>R :!rake<cr>
-map <leader>c :w\|:!script/cucumber<cr>
-" map <leader>w :w\|:!script/features --profile wip<cr>
+map <leader>c :w\|:!bundle exec script/cucumber<cr>
+map <leader>w :w\|:!bundle exec script/cucumber --profile wip<cr>
 
 function! RunTestFile(...)
     if a:0
@@ -114,7 +114,7 @@ function! RunTests(filename)
     :w
     :silent !echo;echo;echo;echo;echo
     if match(a:filename, '\.feature$') != -1
-        exec ":!cucumber " . a:filename
+        exec ":!bundle exec script/cucumber " . a:filename
     else
         if filereadable("script/test")
             exec ":!script/test " . a:filename
