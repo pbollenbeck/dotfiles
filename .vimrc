@@ -52,6 +52,7 @@ augroup vimrc
         \ setlocal tabstop=2
     autocmd FileType ruby,haml,html,eruby,yaml,sass,css,javascript,cucumber,vim
         \ autocmd BufWritePre <buffer> :%s/\s\+$//e
+    autocmd BufNewFile,BufRead *.json set ft=javascript
 augroup end
 
 map <left>  <nop>
