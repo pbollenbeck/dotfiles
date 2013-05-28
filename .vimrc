@@ -11,6 +11,13 @@ colorscheme solarized
 highlight NonText ctermfg=236
 highlight SpecialKey ctermfg=236
 
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd BufRead,InsertLeave * match ExtraWhitespace /\s\+$/
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraLines ctermbg=red guibg=red
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+
 set autoindent
 set complete=.,w,b,t
 set cursorline
@@ -39,10 +46,12 @@ set winwidth=79
 
 augroup vimrc
     autocmd!
-    autocmd FileType ruby,haml,eruby,yaml,javascript,sass,cucumber 
+    autocmd FileType ruby,haml,eruby,yaml,sass,css,javascript,cucumber
         \ setlocal shiftwidth=2 |
         \ setlocal softtabstop=2 |
         \ setlocal tabstop=2
+    autocmd FileType ruby,haml,html,eruby,yaml,sass,css,javascript,cucumber,vim
+        \ autocmd BufWritePre <buffer> :%s/\s\+$//e
 augroup end
 
 map <left>  <nop>
