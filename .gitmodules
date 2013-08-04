@@ -29,3 +29,6 @@
 [submodule ".vim/bundle/html5"]
 	path = .vim/bundle/html5
 	url = https://github.com/othree/html5.vim.git
+[submodule ".vim/bundle/ack"]
+	path = .vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
