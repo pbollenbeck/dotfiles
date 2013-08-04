@@ -136,3 +136,8 @@ function! RunTests(filename)
         end
     end
 endfunction
+
+" Edit global files
+nmap <leader>gv :tabnew ~/.vimrc<cr>
+nmap <leader>gt :tabnew ~/projects/todo.txt<cr>
+
