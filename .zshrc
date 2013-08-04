@@ -39,8 +39,7 @@ h () { history 0 | grep $1 } # grep history
 export EDITOR=vi
 
 # alias
-alias gst='git status'
-alias g=gst
+alias g='git status'
 alias gc='git commit'
 alias gco='git checkout'
 alias gl='git pull'
@@ -49,13 +48,21 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias ga='git add'
 alias gaa='git add --all'
+alias glo="git log -30 --graph --pretty=format:'%h %ad %s (%an)' --date=short"
 
 alias rgm='rails g model'
 alias rgc='rails g controller'
 
+alias rdm='rake db:create db:migrate db:test:prepare'
+alias ber='bundle exec rake'
+alias bec='bundle exec cucumber'
+alias be='bundle exec'
+
 alias ll='ls -al'
 
 alias lc='for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done'
+
+alias vt='vi ~/projects/todo.txt'
 
 # switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
 stty -ixon -ixoff
