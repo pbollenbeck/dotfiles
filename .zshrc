@@ -62,7 +62,7 @@ alias ll='ls -al'
 
 alias lc='for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done'
 
-alias vt='vi ~/projects/todo.txt'
+alias vt='vi ~/Dropbox/todo.txt'
 
 # switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
 stty -ixon -ixoff
