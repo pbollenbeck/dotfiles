@@ -139,5 +139,5 @@ endfunction
 
 " Edit global files
 nmap <leader>gv :tabnew ~/.vimrc<cr>
-nmap <leader>gt :tabnew ~/projects/todo.txt<cr>
+nmap <leader>gt :tabnew ~/Dropbox/todo.txt<cr>
 
