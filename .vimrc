@@ -46,7 +46,7 @@ set winwidth=79
 
 augroup vimrc
     autocmd!
-    autocmd FileType ruby,haml,eruby,yaml,sass,css,javascript,cucumber
+    autocmd FileType ruby,haml,html,eruby,yaml,sass,css,javascript,cucumber
         \ setlocal shiftwidth=2 |
         \ setlocal softtabstop=2 |
         \ setlocal tabstop=2
