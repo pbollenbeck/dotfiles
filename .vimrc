@@ -125,7 +125,7 @@ function! RunTests(filename)
     :w
     :silent !echo;echo;echo;echo;echo
     if match(a:filename, '\.feature$') != -1
-        exec ":!bundle exec script/cucumber " . a:filename
+        exec ":!bundle exec script/cucumber -r features/ " . a:filename
     else
         if filereadable("script/test")
             exec ":!script/test " . a:filename
