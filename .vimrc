@@ -142,3 +142,5 @@ endfunction
 nmap <leader>gv :tabnew ~/.vimrc<cr>
 nmap <leader>gt :tabnew ~/Dropbox/todo.txt<cr>
 
+" CtrlP settings
+let g:ctrlp_show_hidden=1
