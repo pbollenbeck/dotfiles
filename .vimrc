@@ -54,6 +54,7 @@ augroup vimrc
         \ autocmd BufWritePre <buffer> :%s/\s\+$//e
     autocmd BufNewFile,BufRead *.json set ft=javascript
     autocmd BufNewFile,BufRead *.md set ft=text
+    autocmd FileType gitcommit setlocal spell textwidth=72
 augroup end
 
 map <left>  <nop>
