@@ -142,5 +142,8 @@ endfunction
 nmap <leader>gv :tabnew ~/.vimrc<cr>
 nmap <leader>gt :tabnew ~/Dropbox/todo.txt<cr>
 
+" Align cucumber tables
+nmap <leader>a :Tabularize /\|<cr>
+
 " CtrlP settings
 let g:ctrlp_show_hidden=1
