@@ -19,6 +19,7 @@ highlight ExtraLines ctermbg=red guibg=red
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 
 set autoindent
+set colorcolumn=79
 set complete=.,w,b,t
 set cursorline
 set dir=~/tmp,/var/tmp,.
@@ -91,8 +92,8 @@ inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 map <leader>r :call RunTestFile()<cr>
 " map <leader>T :call RunNearestTest()<cr>
 map <leader>R :!rake<cr>
-map <leader>c :w\|:!bundle exec script/cucumber<cr>
-map <leader>w :w\|:!bundle exec script/cucumber --profile wip<cr>
+map <leader>c :w\|:!bundle exec bin/cucumber<cr>
+map <leader>w :w\|:!bundle exec bin/cucumber --profile wip<cr>
 
 function! RunTestFile(...)
     if a:0
@@ -126,7 +127,7 @@ function! RunTests(filename)
     :w
     :silent !echo;echo;echo;echo;echo
     if match(a:filename, '\.feature$') != -1
-        exec ":!bundle exec script/cucumber -r features/ " . a:filename
+        exec ":!bundle exec bin/cucumber -r features/ " . a:filename
     else
         if filereadable("script/test")
             exec ":!script/test " . a:filename
