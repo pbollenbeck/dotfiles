@@ -16,6 +16,7 @@ Plugin 'godlygeek/tabular.git'
 Plugin 'othree/html5.vim.git'
 Plugin 'mileszs/ack.vim.git'
 Plugin 'kien/ctrlp.vim.git'
+Plugin 'heartsentwined/vim-emblem'
 
 call vundle#end()
 filetype plugin indent on
