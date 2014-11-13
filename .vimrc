@@ -1,6 +1,23 @@
 set nocompatible
 
-execute pathogen#infect()
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized.git'
+Plugin 'tpope/vim-rails.git'
+Plugin 'vim-ruby/vim-ruby.git'
+Plugin 'tpope/vim-endwise.git'
+Plugin 'tpope/vim-bundler.git'
+Plugin 'tpope/vim-commentary.git'
+Plugin 'tpope/vim-surround.git'
+Plugin 'godlygeek/tabular.git'
+Plugin 'othree/html5.vim.git'
+Plugin 'mileszs/ack.vim.git'
+Plugin 'kien/ctrlp.vim.git'
+
+call vundle#end()
 filetype plugin indent on
 
 syntax on
