@@ -11,12 +11,13 @@ autoload -U promptinit
 promptinit
 
 source /usr/local/etc/bash_completion.d/git-prompt.sh
-PS1='%{$fg_bold[cyan]%}%c%{$reset_color%}$(__git_ps1) %# '
-# PS1='%{$fg_bold[cyan]%}%c%{$reset_color%}%{$fg_bold[white]%}$(__git_ps1 " (%s)")%{$reset_color%} %# '
+# PS1='%{$fg_bold[cyan]%}%c%{$reset_color%}$(__git_ps1) %# '
+precmd () { __git_ps1 "%{$fg_bold[cyan]%}%~%{$reset_color%} " "%# " "(%s) " }
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
-# GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWUPSTREAM="auto"
+GIT_PS1_SHOWCOLORHINTS=1
 
 # completion
 autoload -U compinit
