@@ -68,3 +68,4 @@ alias vt='vi ~/Dropbox/todo.txt'
 # switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
 stty -ixon -ixoff
 
+eval "$(rbenv init -)"
