@@ -69,3 +69,4 @@ alias vt='vi ~/Dropbox/todo.txt'
 stty -ixon -ixoff
 
 eval "$(rbenv init -)"
+eval "$(direnv hook $0)"
