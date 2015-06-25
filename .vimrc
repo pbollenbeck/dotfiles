@@ -17,6 +17,7 @@ Plugin 'othree/html5.vim.git'
 Plugin 'mileszs/ack.vim.git'
 Plugin 'kien/ctrlp.vim.git'
 Plugin 'heartsentwined/vim-emblem'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
