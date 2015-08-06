@@ -65,6 +65,8 @@ alias lc='for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done'
 
 alias vt='vi ~/Dropbox/todo.txt'
 
+alias bu='brew update && brew upgrade --all && brew cleanup'
+
 # switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
 stty -ixon -ixoff
 
