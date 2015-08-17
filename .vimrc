@@ -39,6 +39,7 @@ highlight ExtraLines ctermbg=red guibg=red
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 
 set autoindent
+set backspace=indent,eol,start
 set colorcolumn=79
 set complete=.,w,b,t
 set cursorline
