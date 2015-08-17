@@ -2,6 +2,13 @@
 
 ## Installation
 
+Make sure project folder exists
+
+```sh
+mkdir -p ~/projects
+cd ~/projects
+```
+
 Clone this repository
 
 ```sh
