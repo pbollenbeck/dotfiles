@@ -19,6 +19,7 @@ Plugin 'kien/ctrlp.vim.git'
 Plugin 'heartsentwined/vim-emblem'
 Plugin 'rust-lang/rust.vim'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 filetype plugin indent on
@@ -78,6 +79,16 @@ augroup vimrc
     autocmd BufNewFile,BufRead *.md set ft=text
     autocmd FileType gitcommit setlocal spell textwidth=72
 augroup end
+
+" Syntastics settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 map <left>  <nop>
 map <right> <nop>
