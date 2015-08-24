@@ -176,6 +176,9 @@ nmap <leader>gt :tabnew ~/Dropbox/todo.txt<cr>
 " Align cucumber tables
 nmap <leader>a :Tabularize /\|<cr>
 
+" Use ag in ack.vim
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " CtrlP settings
 let g:ctrlp_show_hidden=1
 
