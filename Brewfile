@@ -35,4 +35,4 @@ brew 'sqlite'
 brew 'the_silver_searcher'
 brew 'tig'
 brew 'tree'
-brew 'vim'
+brew 'vim', args: ['override-system-vi']
