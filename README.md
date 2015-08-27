@@ -24,7 +24,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 Install homebrew packages
 
 ```sh
-brew bundle ~/projects/dotfiles/Brewfile
+brew tap homebrew/bundle
+brew bundle
 ```
 
 Install dotfiles
