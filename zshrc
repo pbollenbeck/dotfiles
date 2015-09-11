@@ -64,6 +64,9 @@ alias vt='vi ~/Dropbox/todo.txt'
 
 alias bu='brew update && brew upgrade --all && brew cleanup'
 
+wo () {
+    curl http://find/clients.txt 2> /dev/null | awk '{print $1, "\t" $3}' | grep --color=auto -i "$@" | expand -t30
+}
 # switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
 stty -ixon -ixoff
 
