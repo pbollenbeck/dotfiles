@@ -70,5 +70,7 @@ wo () {
 # switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
 stty -ixon -ixoff
 
+export PATH="/usr/local/sbin:$PATH"
+
 eval "$(rbenv init -)"
 eval "$(direnv hook $0)"
