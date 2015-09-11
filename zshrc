@@ -51,9 +51,6 @@ alias ga='git add'
 alias gaa='git add --all'
 alias glo="git log -30 --graph --pretty=format:'%h %ad %s (%an)' --date=short"
 
-alias rgm='rails g model'
-alias rgc='rails g controller'
-
 alias rdm='rake db:create db:migrate db:test:prepare'
 alias ber='bundle exec rake'
 alias bec='bundle exec cucumber'
