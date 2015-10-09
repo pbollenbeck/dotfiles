@@ -75,5 +75,6 @@ stty -ixon -ixoff
 
 export PATH="/usr/local/sbin:$PATH"
 
+export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init -)"
 eval "$(direnv hook $0)"
