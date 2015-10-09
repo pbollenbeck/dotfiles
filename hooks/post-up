@@ -4,4 +4,8 @@ if [ ! -e $HOME/.vim/bundle/vundle ]; then
   git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/vundle
 fi
 
+if [ ! -e $HOME/.vimundo ]; then
+    mkdir -p $HOME/.vimundo
+fi
+
 vim +BundleInstall +qa

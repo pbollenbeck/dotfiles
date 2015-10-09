@@ -63,6 +63,8 @@ set smartcase
 set softtabstop=4
 set statusline=%f\ %m%r%y%=%3l,%2c
 set tabstop=4
+set undofile
+set undodir=$HOME/.vimundo/
 set wildmenu
 set wildmode=list:longest
 set winwidth=79
