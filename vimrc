@@ -20,6 +20,7 @@ Plugin 'heartsentwined/vim-emblem'
 Plugin 'rust-lang/rust.vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/syntastic'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()
 filetype plugin indent on
