@@ -65,7 +65,10 @@ alias vt='vi ~/Dropbox/todo.txt'
 alias bu='brew update && brew upgrade --all && brew cleanup'
 
 wo () {
-    curl http://find/clients.txt 2> /dev/null | awk '{print $1, "\t" $3}' | grep --color=auto -i "$@" | expand -t30
+    curl http://find/clients.txt 2> /dev/null \
+        | awk '{print $1, "\t" $3}' \
+        | grep --color=auto -i "$@" \
+        | expand -t30
 }
 
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
