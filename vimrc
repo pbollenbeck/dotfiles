@@ -72,11 +72,11 @@ set winwidth=79
 
 augroup vimrc
     autocmd!
-    autocmd FileType ruby,haml,html,eruby,yaml,sass,css,javascript,cucumber,coffee
+    autocmd FileType ruby,haml,html,eruby,yaml,sass,scss,css,javascript,cucumber,coffee
         \ setlocal shiftwidth=2 |
         \ setlocal softtabstop=2 |
         \ setlocal tabstop=2
-    autocmd FileType ruby,haml,html,eruby,yaml,sass,css,javascript,cucumber,vim,cpp
+    autocmd FileType ruby,haml,html,eruby,yaml,sass,scss,css,javascript,cucumber,vim,cpp
         \ autocmd BufWritePre <buffer> :%s/\s\+$//e
     autocmd BufNewFile,BufRead *.json set ft=javascript
     autocmd BufNewFile,BufRead *.md set ft=text
