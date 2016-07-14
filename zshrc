@@ -56,7 +56,7 @@ alias ber='bundle exec rake'
 alias bec='bundle exec cucumber'
 alias be='bundle exec'
 
-alias ll='ls -al'
+alias ll='ls -alF'
 
 alias lc='for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done'
 
