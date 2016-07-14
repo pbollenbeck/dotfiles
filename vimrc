@@ -105,7 +105,8 @@ map <C-l> <C-w>l
 
 nmap <CR> :nohlsearch<CR>
 
-let mapleader=","
+let mapleader=" "
+let maplocalleader=" "
 
 " use tab for completion unless at beginning of line
 " see: https://github.com/thoughtbot/dotfiles/blob/master/vimrc
