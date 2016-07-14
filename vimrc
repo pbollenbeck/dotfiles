@@ -185,6 +185,8 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " CtrlP settings
 let g:ctrlp_show_hidden=1
+nmap <leader>f :CtrlP<enter>
+
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
