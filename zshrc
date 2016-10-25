@@ -62,7 +62,7 @@ alias lc='for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done'
 
 alias vt='vi ~/Dropbox/todo.txt'
 
-alias bu='brew update && brew upgrade --all && brew cleanup'
+alias bu='brew update && brew upgrade && brew cleanup'
 
 alias dco='docker-compose'
 
