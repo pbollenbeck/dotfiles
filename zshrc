@@ -64,6 +64,8 @@ alias vt='vi ~/Dropbox/todo.txt'
 
 alias bu='brew update && brew upgrade --all && brew cleanup'
 
+alias dco='docker-compose'
+
 wo () {
     curl http://find/clients.txt 2> /dev/null \
         | awk '{print $1, "\t" $3}' \
