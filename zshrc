@@ -25,6 +25,8 @@ compinit
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]} l:|=* r:|=*'
 
+setopt nonomatch
+
 # path
 cdpath=(~ ~/projects)
 
