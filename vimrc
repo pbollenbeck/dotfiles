@@ -107,6 +107,7 @@ map <C-l> <C-w>l
 nmap <CR> :nohlsearch<CR>
 
 imap öö <Esc>
+imap öÖ <Esc>
 
 let mapleader=" "
 let maplocalleader=" "
