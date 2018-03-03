@@ -129,8 +129,8 @@ let g:ctrlp_show_hidden=1
 nmap <leader>f :CtrlP<enter>
 
 if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor
-  let g:ackprg = 'ag --nogroup --nocolor --column'
-  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-  let g:ctrlp_use_caching = 0
+    set grepprg=ag\ --nogroup\ --nocolor
+    let g:ackprg = 'ag --nogroup --nocolor --column'
+    let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+    let g:ctrlp_use_caching = 0
 endif
