@@ -6,7 +6,6 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized.git'
-Plugin 'tpope/vim-rails.git'
 Plugin 'vim-ruby/vim-ruby.git'
 Plugin 'tpope/vim-endwise.git'
 Plugin 'tpope/vim-bundler.git'
@@ -17,10 +16,8 @@ Plugin 'othree/html5.vim.git'
 Plugin 'mileszs/ack.vim.git'
 Plugin 'kien/ctrlp.vim.git'
 Plugin 'heartsentwined/vim-emblem'
-Plugin 'rust-lang/rust.vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/syntastic'
-Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()
 filetype plugin indent on
