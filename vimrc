@@ -15,7 +15,6 @@ Plugin 'godlygeek/tabular.git'
 Plugin 'othree/html5.vim.git'
 Plugin 'mileszs/ack.vim.git'
 Plugin 'kien/ctrlp.vim.git'
-Plugin 'heartsentwined/vim-emblem'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/syntastic'
 
