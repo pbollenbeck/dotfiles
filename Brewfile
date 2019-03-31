@@ -14,4 +14,4 @@ brew 'ruby-build'
 brew 'sqlite'
 brew 'the_silver_searcher'
 brew 'tree'
-brew 'vim', args: ['override-system-vi']
+brew 'vim'
