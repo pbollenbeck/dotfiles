@@ -92,6 +92,9 @@ augroup vimrc
     autocmd User GoyoLeave Limelight!
 augroup end
 
+let g:vim_markdown_frontmatter = 1
+let g:pencil#map#suspend_af = 'K'   " default is no mapping
+
 " Syntastics settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
