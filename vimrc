@@ -141,7 +141,8 @@ nmap <leader>gt :tabnew ~/Dropbox/todo.txt<cr>
 
 " CtrlP settings
 let g:ctrlp_show_hidden=1
-nmap <leader>f :CtrlP<enter>
+nmap <leader>f :CtrlP<cr>
+nmap <leader>t :CtrlPTag<cr>
 
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
@@ -149,3 +150,9 @@ if executable('ag')
     let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
     let g:ctrlp_use_caching = 0
 endif
+
+" CTags
+nmap <leader>ct :!ctags -R .<cr>
+
+" Tagbar
+nmap <leader>b :TagbarToggle<cr>
