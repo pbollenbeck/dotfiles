@@ -73,16 +73,23 @@ set winwidth=79
 
 augroup vimrc
     autocmd!
-    autocmd FileType ruby,haml,html,eruby,yaml,sass,scss,css,javascript,cucumber,coffee
+    autocmd BufNewFile,BufRead *.json      set ft=javascript
+    autocmd BufNewFile,BufRead *.md        set ft=markdown
+    autocmd BufNewFile,BufRead Jenkinsfile set ft=groovy
+    autocmd FileType ruby,haml,html,eruby,yaml,sass,scss,css,javascript,cucumber,coffee,groovy
         \ setlocal shiftwidth=2 |
         \ setlocal softtabstop=2 |
         \ setlocal tabstop=2
-    autocmd FileType ruby,haml,html,eruby,yaml,sass,scss,css,javascript,cucumber,vim,cpp
+    autocmd FileType ruby,haml,html,eruby,yaml,sass,scss,css,javascript,cucumber,vim,cpp,groovy
         \ autocmd BufWritePre <buffer> :%s/\s\+$//e
-    autocmd BufNewFile,BufRead *.json set ft=javascript
-    autocmd BufNewFile,Bufread *.md setlocal textwidth=80
-    autocmd BufNewFile,BufRead Jenkinsfile set ft=groovy
+    autocmd FileType vim
+        \ autocmd BufWrite :so %
+    autocmd FileType markdown
+        \ call pencil#init() |
+        \ setlocal spell textwidth=80
     autocmd FileType gitcommit setlocal spell textwidth=72
+    autocmd User GoyoEnter Limelight
+    autocmd User GoyoLeave Limelight!
 augroup end
 
 " Syntastics settings
