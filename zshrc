@@ -84,6 +84,7 @@ stty -ixon -ixoff
 
 export PATH="/usr/local/sbin:$PATH"
 
-export RBENV_ROOT=/usr/local/var/rbenv
-eval "$(rbenv init -)"
+source $(brew --prefix asdf)/asdf.sh
+source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+
 eval "$(direnv hook $0)"
