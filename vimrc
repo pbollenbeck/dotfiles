@@ -11,17 +11,11 @@ Plugin 'tpope/vim-endwise.git'
 Plugin 'tpope/vim-commentary.git'
 Plugin 'tpope/vim-surround.git'
 Plugin 'godlygeek/tabular.git'
-Plugin 'othree/html5.vim.git'
 Plugin 'mileszs/ack.vim.git'
 Plugin 'kien/ctrlp.vim.git'
-Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/syntastic'
 Plugin 'reedes/vim-pencil'
 Plugin 'tpope/vim-markdown'
-Plugin 'junegunn/goyo.vim'
-Plugin 'junegunn/limelight.vim'
-Plugin 'dpelle/vim-LanguageTool'
-Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 filetype plugin indent on
