@@ -10,7 +10,7 @@ setopt prompt_percent
 autoload -U promptinit
 promptinit
 
-source /usr/local/etc/bash_completion.d/git-prompt.sh
+source $HOME/.git-prompt.sh
 # PS1='%{$fg_bold[cyan]%}%c%{$reset_color%}$(__git_ps1) %# '
 precmd () { __git_ps1 "%{$fg_bold[cyan]%}%~%{$reset_color%} " "%# " "(%s) " }
 GIT_PS1_SHOWDIRTYSTATE=1
@@ -20,8 +20,8 @@ GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_SHOWCOLORHINTS=1
 
 # completion
-autoload -U compinit
-compinit
+autoload -U +X bashcompinit && bashcompinit
+autoload -U +X compinit && compinit
 zstyle ':completion:*' completer _complete _ignored
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]} l:|=* r:|=*'
 
@@ -61,23 +61,7 @@ alias bec='bundle exec cucumber'
 alias be='bundle exec'
 
 alias ll='ls -alF'
-
-alias lc='for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done'
-
-alias vt='vi ~/Dropbox/todo.txt'
-
 alias bu='brew update && brew upgrade && brew cleanup'
-
-alias dco='docker-compose'
-
-wo () {
-    curl http://find/clients.txt 2> /dev/null \
-        | awk '{print $1, "\t" $3}' \
-        | grep --color=auto -i "$@" \
-        | expand -t30
-}
-
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
 stty -ixon -ixoff
@@ -86,5 +70,3 @@ export PATH="/usr/local/sbin:$PATH"
 
 source $(brew --prefix asdf)/asdf.sh
 source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
-
-eval "$(direnv hook $0)"
