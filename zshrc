@@ -66,7 +66,7 @@ alias bu='brew update && brew upgrade && brew cleanup'
 # switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
 stty -ixon -ixoff
 
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:/usr/local/sbin:$PATH"
 
 source $(brew --prefix asdf)/asdf.sh
 source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
