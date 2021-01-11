@@ -6,7 +6,10 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized.git'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ruby/vim-ruby.git'
+Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-endwise.git'
 Plugin 'tpope/vim-commentary.git'
 Plugin 'tpope/vim-surround.git'
