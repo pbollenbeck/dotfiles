@@ -19,6 +19,7 @@ Plugin 'kien/ctrlp.vim.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'reedes/vim-pencil'
 Plugin 'tpope/vim-markdown'
+Plugin 'prettier/vim-prettier'
 
 call vundle#end()
 filetype plugin indent on
