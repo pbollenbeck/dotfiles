@@ -68,5 +68,5 @@ stty -ixon -ixoff
 
 export PATH="/opt/homebrew/bin:/usr/local/sbin:$PATH"
 
-source $(brew --prefix asdf)/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
