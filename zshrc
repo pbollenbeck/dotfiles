@@ -61,7 +61,7 @@ alias bec='bundle exec cucumber'
 alias be='bundle exec'
 
 alias ll='ls -alF'
-alias bu='brew update && brew upgrade && brew cleanup'
+alias bu='brew update && brew upgrade && brew cleanup && asdf plugin update --all'
 
 # switch off flow control to use CTRL-S and CTRL-Q (e.g. in command-t)
 stty -ixon -ixoff
