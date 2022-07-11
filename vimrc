@@ -13,18 +13,18 @@ Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-endwise.git'
 Plugin 'tpope/vim-commentary.git'
 Plugin 'tpope/vim-surround.git'
+Plugin 'tpope/vim-liquid.git'
 Plugin 'godlygeek/tabular.git'
 Plugin 'mileszs/ack.vim.git'
 Plugin 'kien/ctrlp.vim.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'reedes/vim-pencil'
-Plugin 'tpope/vim-markdown'
 Plugin 'prettier/vim-prettier'
 
 call vundle#end()
 filetype plugin indent on
 
-syntax on
+syntax enable
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
