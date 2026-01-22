@@ -39,7 +39,7 @@ setopt inc_append_history
 h () { history 0 | grep $1 } # grep history
 
 # editor
-export EDITOR=vi
+export EDITOR=nvim
 
 # alias
 alias g='git status'
@@ -67,6 +67,4 @@ alias bu='brew update && brew upgrade && brew cleanup && asdf plugin update --al
 stty -ixon -ixoff
 
 export PATH="/opt/homebrew/bin:/usr/local/sbin:$PATH"
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-source $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
